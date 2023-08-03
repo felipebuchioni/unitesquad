@@ -249,7 +249,7 @@ p {
 
     .placarBtn {
         border-radius: 0px;
-        width: 50%;
+        width: auto;
         display: flex;
         align-itens: center;
         justify-content: center;
