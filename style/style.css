@@ -231,7 +231,9 @@ p {
     }
 
     .main {
-        gap: 40px;
+        gap: 35px;
+        align-itens: center;
+        justify-content: center;
     }
 
     .html-logo {
