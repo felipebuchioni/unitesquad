@@ -34,7 +34,7 @@ body {
 }
 
 .main {
-    height: 100vh;
+    padding: 60px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
