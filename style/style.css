@@ -16,6 +16,7 @@ body {
     width: 100vw;
     text-align: center;
     position: relative;
+    overflow-x: hidden;
 }
 
 #menu {
