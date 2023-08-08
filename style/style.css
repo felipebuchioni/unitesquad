@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --primary-color: #1A1A1B;
+    --secound-color: #333F44;
+    --terc-color: #37AA9C;
+    --fourth-color: #82d8cb;
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: var(--primary-color);
+    width: 100vw;
+    text-align: center;
+    position: relative;
+}
+
+#menu {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    font-size: 2em;
+    position: absolute;
+    top: 5%;
+    left: 3%;
+    cursor: pointer;
+}
+
+.html-logo {
+    width: 130px;
+}
+
+.main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px 0px;
+}
+
+.navPoints {
+    display: flex;
+    align-items: center;
+    gap: 0px 25px;
+}
+
+.btnType {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    background-color: var(--secound-color);
+    color: #fff;
+    border: solid 5px transparent;
+    outline: none;
+    font-family: 'Montserrat';
+    font-size: 2em;
+    font-weight: 700;
+    border-radius: 10px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.btnType:hover {
+    background-color: var(--fourth-color);
+}
+
+.radio-btn {
+    display: none;
+}
+
+.radio-btn-15:checked ~ #btn-15 {
+    background-color: var(--terc-color);
+    border: solid 5px #fff;
+}
+
+.radio-btn-21:checked ~ #btn-21 {
+    background-color: var(--terc-color);
+    border: solid 5px #fff;
+}
+
+.radio-btn-25:checked ~ #btn-25 {
+    background-color: var(--terc-color);
+    border: solid 5px #fff;
+}
+
+.placarPoints {
+    display: flex;
+    gap: 0px 45px;
+}
+
+.placarBtn {
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    border-radius: 15px;
+    border: none;
+    font-weight: 700;
+    font-family: 'Montserrat';
+    font-size: 10em;
+    color: #fff;
+    cursor: pointer;
+}
+
+.leftBtn {
+    background-color: #4DB260;
+    
+}
+
+.leftBtn:hover {
+    background-color: #3e8f4d;
+    
+}
+
+.rightBtn {
+    background-color: var(--fourth-color);
+    
+}
+
+.rightBtn:hover {
+    background-color: var(--terc-color);
+    
+}
+
+#resetBtn {
+    background-color: transparent;
+    color: var(--terc-color);
+    border: 2px solid var(--terc-color);
+    border-radius: 10px;
+    padding: 0.5em 1em;
+    font-family: 'Montserrat';
+    font-size: 1.3em;
+    transition: 0.2s;
+    cursor: pointer;
+    
+}
+
+#resetBtn:hover {
+    color: var(--primary-color);
+    background-color: var(--terc-color);
+}
+
+#matchText {
+    display: none;
+    color: var(--fourth-color);
+    font-family: 'Montserrat';
+    font-size: 1.5em;
+}
+
+.offcanvas {
+    background-color: var(--secound-color);
+    color: #fff;
+}
+
+.offcanvas-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 1.2em;
+    width: 100%;
+}
+
+.options a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.offcanvas-option {
+    padding: 20px 0px;
+    cursor: pointer;
+}
+
+.offcanvas-option:hover {
+    background-color: var(--primary-color);
+}
+
+p {
+    margin: 0;
+}
+
+.logo-offcanvas {
+    width: 100px;
+}
+
+.linkedin {
+    outline: none;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1380px) {
+
+    .main {
+        gap: 20px;
+    }
+
+    .html-logo {
+        width: 80px;
+    }
+
+    .btnType {
+        width: 60px;
+        height: 60px;
+    }
+
+    .placarBtn {
+        width: 250px;
+        height: 250px;
+    }
+
+    #matchText {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 580px) {
+
+    #menu {
+        left: 5%;
+    }
+
+    .main {
+        gap: 35px;
+        justify-content: center;
+    }
+
+    .html-logo {
+        width: 130px;
+    }
+
+    .placarPoints {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 0px;
+    }
+
+    .placarBtn {
+        border-radius: 0px;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        font-size: 7em;
+    }
+}
