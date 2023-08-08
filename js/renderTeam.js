@@ -12,7 +12,7 @@ export function renderTeam(teams) {
     
 
     for(let i = 0; i < team.length; i++) {
-      members += `<p class="teamMember">${team[i]}</p>`
+      members += `<p class="teamMember">${team[i].toUpperCase()}</p>`
     }
 
     names.style.display = 'flex'
