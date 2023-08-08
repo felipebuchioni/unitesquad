@@ -16,7 +16,7 @@ body {
     width: 100vw;
     text-align: center;
     position: relative;
-    
+    overflow-x: hidden;
 }
 
 #menu {
@@ -255,6 +255,7 @@ p {
     color: var(--fourth-color);
     font-size: 3.5em;
     font-weight: 700;
+    text-transform: uppercase;
 }
 
 .teamMember {
